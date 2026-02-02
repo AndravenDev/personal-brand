@@ -182,10 +182,12 @@ export default function Home() {
             Have a project in mind? I'd love to hear about it. Let's create something amazing together.
           </p>
           <a
-            href="mailto:hello@example.com"
+            href="https://www.upwork.com/freelancers/~010c104f3c1e4096e6?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-orange-400 to-orange-500 text-white px-10 py-4 rounded-full font-semibold text-lg hover:from-orange-500 hover:to-orange-600 transition-all"
           >
-            andro.m.ivanov@gmail.com
+            Hire me on Upwork
           </a>
         </div>
       </section>
