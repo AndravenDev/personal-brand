@@ -1,12 +1,45 @@
 export default function Home() {
   const skills = [
-    { name: "React", level: "Expert" },
-    { name: "JavaScript", level: "Expert" },
-    { name: "HTML", level: "Expert" },
-    { name: "CSS", level: "Expert" },
-    { name: "Git", level: "Advanced" },
-    { name: "C#", level: "Intermediate" },
-    { name: "SQL", level: "Basic" },
+    {
+      name: "React",
+      level: "Expert",
+      description: "This is my bread and butter. I've worked on lots of different projects with React over the years.",
+    },
+    {
+      name: "JavaScript",
+      level: "Expert",
+      description: "Being the default frontend programming language, I've used JS for all my years as a developer.",
+    },
+    {
+      name: "TypeScript",
+      level: "Advanced",
+      description: "TS is like C# and JS had a child, so I always liked it. It brings the type safety I missed from C#.",
+    },
+    {
+      name: "HTML",
+      level: "Expert",
+      description: "I started learning basic HTML in high school and ended up becoming a frontend dev.",
+    },
+    {
+      name: "CSS",
+      level: "Expert",
+      description: "CSS was pretty difficult at the beginning, but now it's like second nature.",
+    },
+    {
+      name: "Git",
+      level: "Advanced",
+      description: "Git seemed intimidating at first, but after years of using it I cannot imagine my workflow without it.",
+    },
+    {
+      name: "C#",
+      level: "Intermediate",
+      description: "The first programming language I learned, so it has a special place in my heart. I eventually landed a fullstack position where I was happy to reunite with it.",
+    },
+    {
+      name: "SQL",
+      level: "Basic",
+      description: "When I got into fullstack I had to learn SQL. It was actually pretty interesting and I still use it in my day to day work.",
+    },
   ];
 
   return (
@@ -40,14 +73,17 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">Skills & Expertise</h2>
           <p className="text-slate-500 mb-12 text-lg">Technologies I work with every day</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {skills.map((skill) => (
               <div
                 key={skill.name}
                 className="bg-slate-50 border-2 border-slate-200 rounded-xl p-6 hover:border-orange-400 hover:shadow-lg transition-all"
               >
-                <h3 className="text-xl font-semibold text-slate-800 mb-2">{skill.name}</h3>
-                <span className="text-orange-500 font-medium">{skill.level}</span>
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-semibold text-slate-800">{skill.name}</h3>
+                  <span className="text-orange-500 font-medium text-sm">{skill.level}</span>
+                </div>
+                <p className="text-slate-500 text-sm leading-relaxed">{skill.description}</p>
               </div>
             ))}
           </div>
