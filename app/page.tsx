@@ -50,7 +50,7 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Andrey Ivanov</h1>
           <h2 className="text-2xl md:text-3xl font-light mb-8">Frontend Developer</h2>
           <p className="text-xl text-white/80 max-w-2xl mb-10">
-            With 5 years of experience crafting beautiful, responsive, and user-friendly web applications.
+            With over 5 years of experience crafting beautiful, responsive, and user-friendly web applications.
           </p>
           <div className="flex gap-4 flex-wrap">
             <a
@@ -63,7 +63,7 @@ export default function Home() {
               href="#projects"
               className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-orange-500 transition-colors"
             >
-              View Projects
+              My Experience
             </a>
           </div>
         </div>
@@ -92,27 +92,85 @@ export default function Home() {
 
       <section id="projects" className="py-24 px-8 bg-slate-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Featured Projects</h2>
-          <p className="text-slate-500 mb-12 text-lg">Some of my recent work</p>
-          <div className="grid md:grid-cols-2 gap-8">
-            {[1, 2, 3, 4].map((project) => (
-              <div
-                key={project}
-                className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow"
-              >
-                <div className="h-48 bg-gradient-to-br from-orange-300 to-orange-500"></div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-slate-800 mb-2">Project {project}</h3>
-                  <p className="text-slate-500 mb-4">
-                    A brief description of the project and the technologies used to build it.
-                  </p>
-                  <div className="flex gap-2 flex-wrap">
-                    <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm">React</span>
-                    <span className="bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-sm">TypeScript</span>
-                  </div>
-                </div>
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">Professional Experience</h2>
+          <p className="text-slate-500 mb-12 text-lg">Projects I've contributed to throughout my career</p>
+          <div className="space-y-6">
+            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-orange-400">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Education</span>
+                <span className="text-slate-400 text-sm">Fullstack Developer</span>
               </div>
-            ))}
+              <h3 className="text-xl font-semibold text-slate-800 mb-2">Course Learning Platform</h3>
+              <p className="text-slate-500">
+                Delivered a complete UI overhaul giving the website a fresh new look. The interesting challenge here was working against the clock to deliver before the holidays — and we made it!
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-orange-400">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Education</span>
+                <span className="text-slate-400 text-sm">Fullstack Developer</span>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-800 mb-2">University Management System</h3>
+              <p className="text-slate-500">
+                An educational platform used by big universities to manage complex paperwork. Here I transitioned to fullstack, utilizing my C# knowledge and learning SQL. A big challenge was leading a full-scale UI facelift for the entire website.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-orange-400">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Fintech</span>
+                <span className="text-slate-400 text-sm">Frontend Developer</span>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-800 mb-2">European Bank UI Overhaul</h3>
+              <p className="text-slate-500">
+                I was part of a complete UI overhaul for a European bank, modernizing their digital banking experience and improving the overall user interface.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-orange-400">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Enterprise</span>
+                <span className="text-slate-400 text-sm">Frontend Developer</span>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-800 mb-2">Product & Project Management Platform</h3>
+              <p className="text-slate-500">
+                Worked on a large project for a major company in the product and project management sector. Here we focused heavily on the accessibility aspect, ensuring the platform was usable by everyone.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-orange-400">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Education</span>
+                <span className="text-slate-400 text-sm">Frontend Developer</span>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-800 mb-2">American Educational Platform</h3>
+              <p className="text-slate-500">
+                One of my all-time favorite projects. A really interesting educational platform for the American market where I learned React, TypeScript, and many other soft skills. Loved every moment working on this one.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-orange-400">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Fintech</span>
+                <span className="text-slate-400 text-sm">Junior Developer</span>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-800 mb-2">Middle East Banking Software</h3>
+              <p className="text-slate-500">
+                After getting promoted to junior, I joined a large-scale banking project. Developing banking software was quite the challenge, and here I learned a lot about collaboration and communication in bigger teams.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow border-l-4 border-orange-400">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">Healthcare</span>
+                <span className="text-slate-400 text-sm">2020 · Intern</span>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-800 mb-2">AI-Powered Healthcare Platform</h3>
+              <p className="text-slate-500">
+                Started my career working on a revolutionary project that used AI to make hospital bureaucracy easier to understand for patients. This was quite ahead of its time, before the big AI boom.
+              </p>
+            </div>
           </div>
         </div>
       </section>
